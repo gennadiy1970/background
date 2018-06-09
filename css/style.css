@@ -1,0 +1,54 @@
+body {
+    background: navy;
+    font-size: 24px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.wrapper {
+    width: 960px;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    box-shadow: 0 0 5px 2px hsla(0, 100%, 100%, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.container {
+    width: 49.5%;
+    background: #005;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #3ff;
+}
+
+ul > li > ul > li {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.bg {
+    min-height: 600px;
+    background-image: url(https://demo.cloudimg.io/crop/200x200/s/sample.li/boat.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+}
+
+.comment {
+    font-style: italic;
+    color: grey;
+}

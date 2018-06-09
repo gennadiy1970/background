@@ -1,0 +1,27 @@
+
+.back {
+    position: fixed;
+    padding: 0;
+    display: block;
+    bottom: 50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: hsla(0, 0%, 0%, 0.2);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.5);
+    box-shadow: 2px 2px 5px 2px hsla(0, 100%, 100%, 0.2);
+}
+
+.back:hover {
+    text-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.5);
+    box-shadow: 0 0 5px 4px hsla(0, 0%, 0%, 0.5);
+}

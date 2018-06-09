@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clip</title>
+    <style>
+        body {
+  background: navy;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.box {
+  border: 10px dashed white;
+  box-shadow: 0 0 4px 4px hsla(0, 100%, 100%, 0.2);
+  padding: 20px;
+  text-align: justify;
+  width: 360px;
+  margin: auto;
+  background: linear-gradient(to right, green, yellow);
+  margin-bottom: 25px;
+  /* background-repeat: no-repeat; */
+}
+.text {
+  background-clip: text;
+-webkit-background-clip: text;
+color: transparent; 
+}
+
+.border {
+  background-clip: border-box;
+}
+
+.padding {
+  background-clip: padding-box;
+}
+
+.content {
+  background-clip: content-box;
+}
+    </style>
+</head>
+<body>
+        <div class="box">
+                <!-- background-repeat: no-repeat; -->
+      background-repeat: repeat;
+              </div>
+              
+              <div class="box border">
+                background-clip: border-box;
+              </div>
+              
+              <div class="box padding">
+                background-clip: padding-box; 
+              </div>
+              
+              <div class="box content">
+                 background-clip: content-box; 
+              </div>
+              
+              <div class="box text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              </div>
+</body>
+</html>
