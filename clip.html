@@ -1,67 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clip</title>
-    <style>
-        body {
-  background: navy;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.box {
-  border: 10px dashed white;
-  box-shadow: 0 0 4px 4px hsla(0, 100%, 100%, 0.2);
-  padding: 20px;
-  text-align: justify;
-  width: 360px;
-  margin: auto;
-  background: linear-gradient(to right, green, yellow);
-  margin-bottom: 25px;
-  /* background-repeat: no-repeat; */
-}
-.text {
-  background-clip: text;
--webkit-background-clip: text;
-color: transparent; 
-}
-
-.border {
-  background-clip: border-box;
-}
-
-.padding {
-  background-clip: padding-box;
-}
-
-.content {
-  background-clip: content-box;
-}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Clip</title>
+  <link rel="stylesheet" href="./css/clip.css">
 </head>
+
 <body>
-        <div class="box">
-                <!-- background-repeat: no-repeat; -->
-      background-repeat: repeat;
-              </div>
-              
-              <div class="box border">
-                background-clip: border-box;
-              </div>
-              
-              <div class="box padding">
-                background-clip: padding-box; 
-              </div>
-              
-              <div class="box content">
-                 background-clip: content-box; 
-              </div>
-              
-              <div class="box text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              </div>
+  <div class="wrapper">
+    <h1>background-clip</h1>
+    <p>Свойство CSS <i>background-clip</i> определяет как цвет фона или фоновое изображение будут выводиться под
+      границами
+      блока.</p>
+    <h2>Поддержка браузерами</h2>
+    <iframe class="caniuse" src="https://caniuse.com/#search=background-clip" frameborder="0"></iframe>
+    <div class="bow-wrp">
+      <div class="title">
+        border-box
+      </div>
+      <div class="box border">
+        background-clip: border-box;
+      </div>
+    </div>
+    <div class="bow-wrp">
+      <div class="title">
+        padding-box
+      </div>
+      <div class="box padding">
+        background-clip: padding-box;
+      </div>
+    </div>
+    <div class="bow-wrp">
+      <div class="title">
+        content-box
+      </div>
+      <div class="box content">
+        background-clip: content-box;
+      </div>
+    </div>
+    <div class="bow-wrp">
+      <div class="title">
+        border-text
+      </div>
+      <div class="box text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

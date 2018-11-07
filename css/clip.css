@@ -1,0 +1,73 @@
+body {
+  /* background: navy; */
+  font-size: 24px;
+  font-family: sans-serif;
+}
+h1 {
+  font-weight: bold;
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+
+p {
+  max-width: 480px;
+  text-indent: 2rem;
+}
+.wrapper {
+  max-width: 960px;
+  margin: auto;
+}
+.box {
+  border: 10px dashed orangered;
+  box-shadow: 2px 2px 4px 4px hsla(0, 0%, 0%, 0.2);
+  padding: 20px;
+  text-align: justify;
+  width: 360px;
+  margin: auto;
+  background-color: cadetblue;
+  /* background: linear-gradient(to right, green, yellow); */
+  margin-bottom: 25px;
+  /* background-repeat: no-repeat; */
+}
+
+.text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.border {
+  background-clip: border-box;
+}
+
+.padding {
+  background-clip: padding-box;
+}
+
+.content {
+  background-clip: content-box;
+}
+
+.bow-wrp {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.caniuse {
+    width: 960px;
+    height: 200px;
+    margin-bottom: 2rem;
+    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, .2);
+}

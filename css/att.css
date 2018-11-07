@@ -1,0 +1,67 @@
+.wrapper {
+    background:  hsla(154, 24%, 30%, 0.5) url(https://images.pexels.com/photos/724712/pexels-photo-724712.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  /*   background-attachment: fixed; */
+    background-attachment: local;
+  /*   background-attachment: scroll; */
+    overflow: scroll;
+  }
+  
+  h1 {
+    color:#fff;
+    font-size: 60px;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  div {
+    color:#fff;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+  }
+  
+  body {
+    background: linear-gradient( #bbb, transparent 1px),
+                linear-gradient( 90deg, #bbb, transparent 1px);
+    background-size: 28px 28px;
+    background-position: center center;
+  }
+  :root {
+    --wrapper-width: 320px;
+  }
+  .wrapper {
+    width: var(--wrapper-width);
+    height: calc(var(--wrapper-width) * 3);
+    margin: 80px auto;
+    border: 18px solid #3B6050;
+  }
+  .controls {
+    width: var(--wrapper-width);
+    height: calc(var(--wrapper-width) / 3);
+  /*   margin: auto; */
+    padding: 0;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    margin-left: calc(var(--wrapper-width) / -2);
+  }
+  
+  button {
+    width: 70px;
+    height: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    background: #3B6050;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  button:hover {
+    transform: scale(1.2);
+  }
