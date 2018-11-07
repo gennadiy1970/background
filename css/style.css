@@ -1,7 +1,6 @@
 body {
-  background: #ffe;
+  background: #eed;
   font-size: 24px;
-  /* color: #fff; */
   font-family: sans-serif;
 }
 
@@ -28,12 +27,10 @@ h6 {
 .container {
   width: 49.5%;
   color: #335;
-  /* background: #005; */
 }
 
 a {
   text-decoration: none;
-  /* color: #fff; */
 }
 
 a:hover {
@@ -49,7 +46,8 @@ ul > li > ul > li {
 .bg {
   min-height: 600px;
   background-color: #fff;
-  background-image: url(https://demo.cloudimg.io/crop/200x200/s/sample.li/boat.jpg);
+  /* background-image: url(https://demo.cloudimg.io/crop/200x200/s/sample.li/boat.jpg); */
+  background-image: url(../img/picture.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   box-shadow: 2px 2px 2px 2px hsla(0, 0%, 0%, 0.2);
@@ -72,4 +70,22 @@ ul > li > ul > li {
 .active {
   color: #800;
   text-shadow: 1px 1px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+.comment {
+  color: grey;
+  padding: 0 0.25rem;
+}
+.comment::before {
+  content: "/* ";
+}
+.comment::after {
+  content: " */";
+}
+
+.prop[data-size="contain"],
+.prop[data-size="cover"],
+.prop[data-size="auto"] {
+  display: flex;
+  justify-content: space-between;
 }

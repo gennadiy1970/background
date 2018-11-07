@@ -16,11 +16,23 @@
             <ol>
                 <li>background-size:
                     <ul class="bg-size">
-                        <li class="prop" data-size="contain">contain <span class="comment">// fill width</span></li>
-                        <li class="prop" data-size="contain">100% auto; <span class="comment">// fill width</span></li>
-                        <li class="prop" data-size="cover">cover <span class="comment">// fill height</span></li>
-                        <li class="prop" data-size="cover">auto 100%; <span class="comment">// fill height</span></li>
-                        <li class="prop" data-size="auto">auto; <span class="comment">// image size</span></li>
+                        <li class="prop" data-size="contain">contain <span class="comment">fill width</span></li>
+                        <li class="prop" data-size="contain">
+                            <label>
+                                <span class="res">100</span>% auto;
+                                <input type="range" name="range" id="range" min="0" max="100" step="1" value="100">
+                            </label>
+                            <span class="comment">fill width</span>
+                        </li>
+                        <li class="prop" data-size="cover">cover <span class="comment">fill height</span></li>
+                        <li class="prop" data-size="cover">
+                            <label>
+                                auto <span class="resY">100</span>%;
+                                <input type="range" name="rangeY" id="rangeY" min="0" max="100" step="1" value="100">
+                            </label>
+                            <span class="comment">fill height</span>
+                        </li>
+                        <li class="prop" data-size="auto">auto; <span class="comment">fit to image size</span></li>
                     </ul>
                 </li>
                 <li>background-image: url( <span class="comment">./path</span>)</li>
@@ -49,9 +61,7 @@
                 <li><a href="./origin.html" target="_blank">background-origin</a></li>
             </ol>
         </div>
-        <div class="container bg">
-
-        </div>
+        <div class="container bg"></div>
     </div>
     <script src="./js/app.js"></script>
 </body>

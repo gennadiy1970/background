@@ -12,17 +12,13 @@
 <body>
   <div class="wrapper">
     <h1>background-origin</h1>
-    <h2>Поддержка браузерами</h2>
+    <p>Свойство CSS <b>background-origin</b> задает область фонового позиционирования. 
+      Другими словами, это свойство устанавливает исходную позицию для изображения
+       background-image.</p>
+       <p>Зависимости: необходимо установить <b>background-repeat: no-repeat;</b></p>
+    <a href="https://caniuse.com/#search=background-origin"><h2>Поддержка браузерами</h2></a>
     <iframe class="caniuse" src="https://caniuse.com/#search=background-origin" frameborder="0"></iframe>
-    <div class="bow-wrp">
-      <div class="title">
-        border-box
-      </div>
-      <div class="box">
-        <!-- background-repeat: no-repeat; -->
-        background-repeat: repeat;
-      </div>
-    </div>
+    
 
     <div class="bow-wrp">
       <div class="title">
@@ -35,7 +31,7 @@
 
     <div class="bow-wrp">
       <div class="title">
-        border-box
+          padding-box
       </div>
       <div class="box padding">
         background-origin: padding-box;
@@ -44,7 +40,7 @@
 
     <div class="bow-wrp">
       <div class="title">
-        border-box
+          content-box
       </div>
       <div class="box content">
         background-origin: content-box;
